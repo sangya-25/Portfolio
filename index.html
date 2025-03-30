@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="images/fevicon.webp">
+</head>
+<body>
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script src="script.js"></script>
+    <div class="main">
+        <div class="side"></div>
+        <div id="header"></div>
+        <div id="header2"></div>
+        <div class="container">
+            <nav>
+                <h1 style="font-size: 50px;"><span style="color:#ff004f;">P</span>ortfolio.</h1>
+            </nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#services">My Services</a></li>
+                <li><a href="#portfolio">Project</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span style="color: #ff004f;"> Sangya Ojha</span> <br> from India</h1>
+                <p class="bio">I'm a passionate Software Engineer specializing in full stack web development. <br> I believe that technology is more than just code—it's a canvas for creativity and <br> a platform for solving real-world problems. Ready to dive headfirst into the world of technology, <br> I'm eager to collaborate, innovate, and drive digital transformation.</p>
+                <div class="buttons">
+                    <a href="https://www.linkedin.com/in/sangya-ojha-7a58a22a3/"><button><i style="font-size: 22px; margin-right: 10px;" class="fa-brands fa-linkedin"></i>Let's connect</button></a>
+                    <!-- <button><i style="font-size: 22px; margin-right: 13px;" class="fa-solid fa-check"></i>Hire Me</button> -->
+                </div>
+            </div>
+           
+        </div>
+        <!-- <div class="loader">
+            <div class="circle">
+              <div class="dot"></div>
+              <div class="outline"></div>
+            </div>
+            <div class="circle">
+              <div class="dot"></div>
+              <div class="outline"></div>
+            </div>
+            <div class="circle">
+              <div class="dot"></div>
+              <div class="outline"></div>
+            </div>
+            <div class="circle">
+              <div class="dot"></div>
+              <div class="outline"></div>
+            </div>
+          </div> -->
+    </div>
+    <!--About Section-->
+    <div id="About">
+        <div id="about-section">
+            <div class="row">
+                <div class="about-col-1">
+                    <img class="about-img" src="images/abt-img.webp
+                    " alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate Web Developer, UI/UX Designer, and AI Enthusiast with a strong background in designing and developing AI model-based projects and web applications. With expertise in frontend and full-stack development, I create responsive, user-friendly, and innovative digital experiences.
+
+                        My interest lies in blending technology with design, ensuring that each project is not only functional but also visually compelling. As a UI/UX Designer, I focus on intuitive user experiences, prototyping, and creating stunning animations to enhance user engagement.
+                        
+                        Additionally, I am deeply fascinated by Artificial Intelligence (AI) and Machine Learning (ML). I enjoy working on AI-powered applications, predictive analytics, and intelligent automation, combining my development skills with smart technologies to drive innovation.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"  onclick="opentab('skills')" style="font-weight: bolder;">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiences')" style="font-weight: bolder;">Experience</p>
+                        <p class="tab-links" onclick="opentab('educations')" style="font-weight: bolder;">Education</p>
+                        <p class="tab-links" onclick="opentab('hackathon')" style="font-weight: bolder;">Hackathons and Ideathons</p>
+                    </div>
+                    <div class="tab-container">
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Crafting intuitive and visually appealing user interfaces with a focus on accessibility and user experience.</li>
+                                <li><span>Full Stack Web Development</span><br> Building robust, scalable, responsive and high-performance web applications using modern technologies.</li>
+                                <li><span>API Integration</span><br>Seamlessly integrating third-party APIs and backend services for enhanced functionality and efficiency.</li>
+                                <li><span>DSA</span><br>Great capability to tackle complex challenges efficiently.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experiences">
+                            <ul>
+                                <li><span>UI/UX Design Expertise</span><br>Software Engineer at BPIT Institute</li>
+                                <li><span>Hackathon Enthusiast</span><br>Partcipated in several Hackathons at different Levels</li>
+                                <li><span>Ideathons</span><br>From ideation to deployment, actively involved in creating innovative web applications, integrating modern technologies, and optimizing user interactions.</li>
+                        </div>
+                        <div class="tab-contents" id="educations">
+                            <ul>
+                                <li><span>Schooling</span><br>Arwachin Bharti Bhawan Sr. Sec School, New Delhi</li>
+                                <li><span>2023-2027</span><br>Engineering at Bhagwan Parshuram Institute Of Technology, Delhi<br></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="hackathon">
+                            <ul>
+                                <li><span>Code Cubicle</span><br>Participated, with the Project of an e-commerce book selling Website collaborating will Local Sellers of Daryaganj.</li>
+                                <li><span>Code Cubicle 2.0</span><br>Proposed the idea of Blood bank availability through online services<br></li>
+                                <li><span>Code Kshetra 2.0</span><br>Proposed an innovative campus marketplace for students to sell unused items to those in need, fostering a sustainable environment.<br></li>
+                                <li><span>Smart India Hackathon, 2024</span><br>Partcipated under theme Health and Care, created a webapp to overcome the problem of long queues and hustle at OPDs<br></li>
+                                <li><span>Hack’24 at IIIT-Delhi </span><br>Developed a data aggregator to seamlessly integrate multiple databases, enhancing data accessibility and interoperability.<br></li>
+                                <li><span>Build Wars at MAIT </span><br>Built an RTI-formatted letter generator using Generative AI, enabling users to draft formal RTI applications effortlessly. Achieved a top 5 position for innovation and execution.<br></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>Frontend Development: Building visually appealing, interactive, and responsive user interfaces using technologies like HTML, CSS, JavaScript, React, Angular, Vue.js, etc.</p>
+                    <p>Backend Development: Developing server-side logic, APIs, and databases using Node.js, Django, Flask, etc.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Creating wireframes, prototypes, and user-friendly designs using tools like Figma, Adobe XD, and Canva.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <!-- <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Machine Learning & AI Development</h2>
+                    <p>Building and training AI/ML models for tasks like image recognition, recommendation systems, chatbots, and predictive analytics using Python, TensorFlow, PyTorch, etc.</p>
+                    <a href="#">Learn more</a>
+                </div> -->
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>API Development & Integration</h2>
+                    <p>Designing RESTful APIs using Node.js (Express), Django, Flask, or FastAPI.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!------Portfolio------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <button id="scroll-left" class="scroll-btn">&#10094;</button> <!-- Left Arrow -->
+                <div class="work">
+                    <img src="images/food.png" alt="">
+                    <div class="layer">
+                        <h3>Food Recipe Website</h3>
+                        <p>A MERN Based project where user can share recipes and generate new ones using API</p>
+                        <a href="https://recipessearch.onrender.com/signup"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/RTI.png" alt="">
+                    <div class="layer">
+                        <h3>RTI Formatted Letter Generator</h3>
+                        <p>An GenAI-driven platform that simplifies the Right to Information (RTI) filing process. Users can enter their queries in plain language, and the system automatically generates a formally structured RTI letter.</p>
+                        <a href="https://recipessearch.onrender.com/signup"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/data_aggregate.png" alt="">
+                    <div class="layer">
+                        <h3>Data Aggregator</h3>
+                        <p>– An Unified Data Aggregation System that integrates three key databases</p>
+                        <a href="https://police-data-aggregation.onrender.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/shop.png" alt="">
+                    <div class="layer">
+                        <h3>e-commerce Shopping Website</h3>
+                        <p>The App connects you to the talented people around the world. Download it from Play Store</p>
+                        <a href="https://github.com/sangya-25/Scatch.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project1.png" alt="">
+                    <div class="layer">
+                        <h3>Tic-Tac-Toe Game</h3>
+                        <p>A 2-player (or AI vs. Player) game played on a 3x3 grid. The first player to align 3 marks (X or O) in a row, column, or diagonal wins.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/post.png" alt="">
+                    <div class="layer">
+                        <h3>Social Post webapp</h3>
+                        <p>The App that lets you share your inner thoughts and connects you to the people around the world.</p>
+                        <a href="https://github.com/sangya-25/POST.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project6.png" alt="">
+                    <div class="layer">
+                        <h3>Rock Paper Scissor</h3>
+                        <p>A simple turn-based game where the player selects Rock, Paper, or Scissors, and the computer randomly picks one. The winner is decided based on the standard rules.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="images/project4.png" alt="">
+                    <div class="layer">
+                        <h3>Health Report Analysis Web App</h3>
+                        <p>The App connects you to the talented people around the world. Download it from Play Store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div> -->
+                <div class="work">
+                    <img src="images/currency.png" alt="">
+                    <div class="layer">
+                        <h3>Currency Convertor Webapp</h3>
+                        <p>A Currency Converter Website is an online platform that allows users to quickly convert the value of one currency into another based on real-time exchange rates. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <button id="scroll-right" class="scroll-btn">&#10095;</button> <!-- Right Arrow -->
+            <p class="slide-indicator">Slide to view more projects →</p>
+    
+        </div>
+    </div>
+    <!-------Certificates------->
+    <div id="certificates">
+        <div class="container">
+            <h1 class="sub-title">My Certificates</h1>
+            <div class="certificate-wrapper">
+                <div class="certificate-lists">
+                    <div class="certificate">
+                        <img src="images/cf-3.jpg" alt="">
+                        <div class="layer">
+                            <h3>Certificate of Flipkart Runway Season 5</h3>
+                            <a href="https://mail.google.com/mail/u/0?ui=2&ik=ff35c3ae92&attid=0.2&permmsgid=msg-a:r4137730047733796071&th=195e6ddf7529446f&view=att&disp=safe&realattid=195e6dde1996318b15d2&zw"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="certificate">
+                        <img src="images/cf-1.jpg" alt="">
+                        <div class="layer">
+                            <h3>Certificate of HackHazards</h3>
+                            <a href="https://mail.google.com/mail/u/0?ui=2&ik=ff35c3ae92&attid=0.3&permmsgid=msg-a:r4137730047733796071&th=195e6ddf7529446f&view=att&disp=safe&realattid=195e6dde1995f3e44174&zw"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="certificate">
+                        <img src="images/cf-2.jpg" alt="">
+                        <div class="layer">
+                            <h3>Certificate of Code Cubicle 2.O</h3>
+                            <a href="https://mail.google.com/mail/u/0?ui=2&ik=ff35c3ae92&attid=0.1&permmsgid=msg-a:r4137730047733796071&th=195e6ddf7529446f&view=att&disp=safe&realattid=195e6dde199ce7be47c6&zw"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="certificate">
+                        <img src="images/cf-4.jpg" alt="">
+                        <div class="layer">
+                            <h3>Certificate Smart Delhi Ideathon</h3>
+                            <a href="https://mail.google.com/mail/u/0?ui=2&ik=ff35c3ae92&attid=0.4&permmsgid=msg-a:r4137730047733796071&th=195e6ddf7529446f&view=att&disp=safe&realattid=195e6dde199fb0618251&zw"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="certificate">
+                        <img src="images/cf-5.jpg" alt="">
+                        <div class="layer">
+                            <h3>Certificate of IOT workshop</h3>
+                            <a href="https://mail.google.com/mail/u/0?ui=2&ik=ff35c3ae92&attid=0.5&permmsgid=msg-a:r4137730047733796071&th=195e6ddf7529446f&view=att&disp=safe&realattid=195e6dde1995be2aa5a5&zw"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="certificate">
+                        <img src="images/cf-6.jpg" alt="">
+                        <div class="layer">
+                            <h3>Certificate of Ideathon organised by GDSC</h3>
+                            <a href="https://mail.google.com/mail/u/0?ui=2&ik=ff35c3ae92&attid=0.6&permmsgid=msg-a:r4137730047733796071&th=195e6ddf7529446f&view=att&disp=safe&realattid=195e6dde199612b7aba3&zw"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-----Contact----->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 style="margin-bottom: 20px;" class="sub-title">Contact Me</h1>
+                    <p style="margin-bottom: 10px;"><i class="fa-solid fa-envelope"></i>ojha.sangya25@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7703928478</p>
+                    <div class="Social-icon">
+                        <a href="https://x.com/sangya_ojha?t=YwMC_VyYnWDsI_Wyxxii0g&s=09"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/sangya-ojha-7a58a22a3/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/sangya-25"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
+                        
+                    </div>
+                    <a href="images/sangya-resume.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © <span style="color: #ff004f;">Sangya</span>. All Rights Reserved.</p>
+        </div>
+    </div>
+    <!-------Script-------->
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tab){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tab).classList.add("active-tab")
+        }
+        document.getElementById('scroll-left').addEventListener('click', function() {
+            document.querySelector('.work-list').scrollBy({ left: -350, behavior: 'smooth' });
+        });
+        document.getElementById('scroll-right').addEventListener('click', function() {
+            document.querySelector('.work-list').scrollBy({ left: 350, behavior: 'smooth' });
+        });
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwg2XgGKbS5fPctJb0CfufTjGxzAULCgVfUquaHAOpWof-waBlNf2HyeFaOMeL73xjVzw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById('msg')
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
