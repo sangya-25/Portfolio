@@ -21,7 +21,7 @@ body{
     height: 100vh;
 }
 #header{
-      background-image: url('images/sangya_try.jpg');
+      background-image: url('/images/sangya_try.jpg');
       background-blend-mode: multiply;
       width: 600px;             /* Ensure width and height are equal */
       height: 600px;
