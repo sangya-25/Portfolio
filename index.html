@@ -7,8 +7,23 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/png" href="images/fevicon.webp">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
 <body>
+    <div id="preloader">
+        <div class="loader-content">
+            <svg class="progress-ring" width="200" height="200">
+                <circle class="progress-ring__circle" stroke="#2b2b2d" stroke-width="8" fill="transparent" r="90" cx="100" cy="100"/>
+                <circle class="progress-ring__circle-progress" stroke="#ff004f" stroke-width="8" fill="transparent" r="90" cx="100" cy="100"/>
+            </svg>
+            <div class="percentage">
+                <span class="counter">0</span>
+                <span>%</span>
+            </div>
+            <div class="loading-text">loading..</div>
+        </div>
+    </div>
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script src="js/script.js"></script>
     <div class="main">
@@ -106,7 +121,7 @@
                                 <li><span>Code Cubicle 2.0</span><br>Proposed the idea of Blood bank availability through online services<br></li>
                                 <li><span>Code Kshetra 2.0</span><br>Proposed an innovative campus marketplace for students to sell unused items to those in need, fostering a sustainable environment.<br></li>
                                 <li><span>Smart India Hackathon, 2024</span><br>Partcipated under theme Health and Care, created a webapp to overcome the problem of long queues and hustle at OPDs<br></li>
-                                <li><span>Hack’24 at IIIT-Delhi </span><br>Developed a data aggregator to seamlessly integrate multiple databases, enhancing data accessibility and interoperability.<br></li>
+                                <li><span>Hack'24 at IIIT-Delhi </span><br>Developed a data aggregator to seamlessly integrate multiple databases, enhancing data accessibility and interoperability.<br></li>
                                 <li><span>Build Wars at MAIT </span><br>Built an RTI-formatted letter generator using Generative AI, enabling users to draft formal RTI applications effortlessly. Achieved a top 5 position for innovation and execution.<br></li>
                             </ul>
                         </div>
@@ -356,6 +371,79 @@
             })
             .catch(error => console.error('Error!', error.message))
         })
+      </script>
+      <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            const aboutSection = document.querySelector("#About");
+            const aboutImage = document.querySelector(".about-col-1");
+            const subTitle = document.querySelector(".sub-title");
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                        }
+                    });
+                },
+                { threshold: 0.3 }
+            );
+
+            observer.observe(aboutSection);
+            observer.observe(aboutImage);
+            observer.observe(subTitle);
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+    const servicesSection = document.querySelector("#services");
+    const serviceCards = document.querySelectorAll(".services-list div");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.2 }
+    );
+
+    observer.observe(servicesSection);
+    serviceCards.forEach((card) => observer.observe(card));
+});
+        document.addEventListener("DOMContentLoaded", function () {
+            const portfolioSection = document.querySelector("#portfolio");
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                        }
+                    });
+                },
+                { threshold: 0.6 }
+            );
+
+            observer.observe(portfolioSection);
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("#portfolio, #certificates, #contact, .work, .certificate");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target); // Stop observing after animation
+            }
+        });
+    }, { threshold: 0.4 });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+
       </script>
 </body>
 </html>
