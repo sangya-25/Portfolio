@@ -283,12 +283,12 @@ ul li a:hover::after {
     width: 600px;
     height: 600px;
     background-repeat: no-repeat;
-    background-position: center;
-    /* background-size: cover; */
+    background-position: center 0%;
+    background-size: cover;
     border-radius: 50%;
     position: absolute;
-    left: 1000px;  
-    top: 100px; 
+    right: 50px;
+    top: 100px;
     background-clip: border-box;
     z-index: 2;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
@@ -303,8 +303,8 @@ ul li a:hover::after {
     width: 590px;
     height: 590px;
     position: absolute;
-    left: 1280px;  
-    top: 200px; 
+    right: 0px;
+    top: 200px;
     background: linear-gradient(to right, black, rgb(59, 55, 55));
     border-radius: 50%;
     z-index: 1;
